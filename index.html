@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Preparedness Education Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+<div class="loader"></div>
+
+
+    <nav>
+        <h2 class="logo" data-aos="fade-right">Climate<span>Action</span></h2>
+        <ul data-aos="fade-left" data-aos-delay="200">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#disasters">Risks</a></li>
+            <li><a href="#preparedness">Plan</a></li>
+            <li><a href="#action">Action</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="wave-container">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#007BFF" fill-opacity="1" 
+            d="M0,256L60,245.3C120,235,240,213,360,197.3C480,181,600,171,720,170.7C840,171,960,181,1080,170.7C1200,160,1320,128,1380,112L1440,96L1440,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+
+
+    <section id="home" class="hero">
+        <img class="float-icon" src="https://cdn-icons-png.flaticon.com/512/4042/4042293.png" alt="Disaster Icon">
+        <img class="float-icon2" src="https://cdn-icons-png.flaticon.com/512/707/707631.png" alt="Rain Icon">
+        <img class="float-icon3" src="https://cdn-icons-png.flaticon.com/512/3209/3209888.png" alt="Fire Icon">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+            <h1>Disaster Preparedness<br><span>Education Portal</span></h1>
+            <p>Empowering communities to face the growing threats of climate change. SDG 13: Knowledge is resilience.</p>
+            <button class="btn" onclick="showAlert()">Simulate Alert</button>
+        </div>
+
+        <img src="https://www.cppr.in/wp-content/uploads/2024/04/Climate-Action-Can-ESG-Help-1.jpg" class="hero-img" data-aos="zoom-in" data-aos-duration="1000" alt="Climate Action">
+
+    </section>
+    
+    <section id="climate-info" class="section climate-info-section">
+        <h2 class="title" data-aos="fade-down">Why Prepare? Understanding Climate Change</h2>
+
+        <div class="info-grid">
+            <div class="info-content" data-aos="fade-right">
+                <p>
+                    <b>Climate change refers to long-term shifts in temperature and weather patterns.</b> While Earth’s climate naturally changes, human activities—primarily burning fossil fuels, deforestation, and industrial pollution have dramatically accelerated this process.
+                </p>
+                <p>These rapid changes don't just affect ice caps; they directly impact human safety through **more frequent and intense natural disasters**. Preparation is no longer optional—it's essential for survival and resilience.</p>
+                
+                <h3 data-aos="fade-right" data-aos-delay="200"><i class="fas fa-chart-line"></i> Quick Climate Facts:</h3>
+                <ul class="info-list small-list">
+                    <li data-aos="fade-up">Earth is 1.1°C warmer than in the 1800s.</li>
+                    <li data-aos="fade-up" data-aos-delay="100">Antarctica loses 150 billion tons of ice yearly.</li>
+                    <li data-aos="fade-up" data-aos-delay="200">Sea levels are rising faster than ever.</li>
+                </ul>
+            </div>
+            
+            <div class="image-box" data-aos="zoom-in-left">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-climate-change-infographic_23-2149092319.jpg?semt=ais_hybrid&w=740&q=80" alt="Climate Change Data">
+            </div>
+        </div>
+    </section>
+
+    <section id="disasters" class="section disaster-risks">
+        <h2 class="title" data-aos="fade-down">Specific Climate Risks & Disasters</h2>
+        <p class="section-subtitle" data-aos="fade-up">Identify, understand, and plan for the hazards amplified by a changing climate.</p>
+
+        <div class="cards">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://media.istockphoto.com/id/2069097950/photo/huge-dark-cloud-with-a-swirling-funnel-in-southwest-texas.jpg?s=612x612&w=0&k=20&c=RdjzbfCHQkaLOdz5X8bt3llEQBKpwiBZHNKD8fQipqc=" alt="Cyclones">
+                <h3><i class="fas fa-wind"></i> Cyclones & Storms</h3>
+                <p>Learn safe zones, evacuation procedures, and how to secure property before landfall.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://www.science.org/do/10.1126/science.abl5271/abs/germanyfloods_1280x720.jpg" alt="Floods">
+                <h3><i class="fas fa-water"></i> Floods & Heavy Rain</h3>
+                <p>Never enter floodwaters. Understand flash flood risks and water contamination.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Burnout_ops_on_Mangum_Fire_McCall_Smokejumpers.jpg" alt="Wildfires">
+                <h3><i class="fas fa-fire"></i> Wildfires</h3>
+                <p>Create defensible space around your home and recognize signs of heat exhaustion.</p>
+            </div>
+        </div>
+        <button class="btn read-more-btn" onclick="showAlert()" data-aos="fade-up" data-aos-delay="400">View Detailed Risk Guides</button>
+    </section>
+    
+    <section id="preparedness" class="section checklist-section">
+        <h2 class="title" data-aos="fade-down">Your Resilience Plan: Essential Checklist</h2>
+
+        <div class="prep-grid">
+            <div class="checklist-box" data-aos="fade-right">
+                <p class="section-subtitle">A preparedness plan minimizes risk and maximizes recovery. Start here.</p>
+                <ul class="checklist-list">
+                    <li><i class="fas fa-suitcase"></i> <b>Emergency Kit:</b> 3 days of food, water, and essential meds.</li>
+                    <li><i class="fas fa-file-alt"></i> <b>Document File:</b> Copies of IDs, insurance, and medical records.</li>
+                    <li><i class="fas fa-person"></i> <b>Communication Plan:</b> Designate an out-of-state contact and family meeting points.</li>
+                    <li><i class="fas fa-house-damage"></i> <b>Home Safety:</b> Secure heavy furniture and turn off utilities if needed.</li>
+                    <li><i class="fas fa-bolt"></i> <b>Power Backup:</b> Keep devices charged and have a battery-powered radio.</li>
+                </ul>
+                <button class="btn checklist-download" data-aos="fade-up" onclick="alert('Downloading full checklist...')">Download Printable Guide</button>
+            </div>
+            
+            <div class="prep-image" data-aos="zoom-in-left">
+                <img src="https://www.shutterstock.com/image-photo/disaster-supply-kit-earthquake-on-600nw-2609172235.jpg" alt="Emergency Kit Preparation">
+            </div>
+        </div>
+    </section>
+
+    <section id="action" class="section action-section">
+        <h2 class="title" data-aos="fade-down">Beyond Preparedness: Take Climate Action</h2>
+
+        <div class="info-cards">
+            <div class="info-card" data-aos="flip-left" data-aos-delay="100"> 
+                <i class="fas fa-lightbulb"></i>
+                <h4>Reduce Energy</h4>
+                <p>Switch to green energy providers and minimize home consumption.</p>
+            </div>
+            <div class="info-card" data-aos="flip-left" data-aos-delay="200"> 
+                <i class="fas fa-bus"></i>
+                <h4>Sustainable Travel</h4>
+                <p>Prioritize public transport, cycling, or electric vehicles.</p>
+            </div>
+            <div class="info-card" data-aos="flip-left" data-aos-delay="300"> 
+                <i class="fas fa-seedling"></i>
+                <h4>Plant Trees</h4>
+                <p>Support reforestation efforts and plant native species in your area.</p>
+            </div>
+            <div class="info-card" data-aos="flip-left" data-aos-delay="400"> 
+                <i class="fas fa fa-legal"></i>
+                <h4>Advocate Locally</h4>
+                <p>Contact local leaders to push for renewable energy policies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <h2 class="title" data-aos="fade-down">Contact Us</h2>
+        <p class="section-subtitle" data-aos="fade-up">Have questions about our educational modules, need preparedness resources, or want to partner on a local training event? Let us know.</p>
+
+        <div class="contact-grid">
+            
+            <div class="contact-form-box" data-aos="fade-right">
+                <h3>Submit an Inquiry or Resource Request</h3>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Inquiry Type (e.g., Training, Curriculum Access, Partnership)..." rows="4" required></textarea>
+                    <button type="submit" class="btn submit-btn">Send Request</button>
+                </form>
+            </div>
+
+            <div class="contact-info-box" data-aos="fade-left">
+                <h3>Preparedness Channels & Support</h3>
+                
+                <div class="info-item">
+                    <i class="fas fa-graduation-cap"></i> 
+                    <p>Education Center: 123 Learning Way, Preparedness Town, Mumbai-400098</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <p>Resource Hotline: +22 2057835284 (Training & Planning Support)</p>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email: educationportal@gmail.com</p>
+                </div>
+                
+                <div class="map-placeholder">
+                    
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+        <h2 class="title" data-aos="fade-down">Test Your Resilience Knowledge</h2>
+        <p id="quizResult" data-aos="fade-up"></p>
+        <button class="quiz-btn" onclick="openQuiz()" data-aos="zoom-in-up" data-aos-delay="200">Start Preparedness Quiz</button>
+    </section>
+
+    <div id="quizModal" class="quiz-modal">
+        <div class="quiz-box">
+            <h3><b>Quick Climate Quiz</b></h3>
+            <p>What is the main human activity accelerating climate change?</p>
+            <button onclick="submitQuiz(true)">A) Burning Fossil Fuels</button>
+            <button onclick="submitQuiz(false)">B) Watching too much TV</button>
+        </div>
+    </div> 
+    <footer>
+        <b>2025 | Climate Action | SDG 13</b>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+</body>
+</html>
